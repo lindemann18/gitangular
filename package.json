@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/lindemann18/gitangular/issues"
   },
-  "homepage": "https://github.com/lindemann18/gitangular#readme"
+  "homepage": "https://github.com/lindemann18/gitangular#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

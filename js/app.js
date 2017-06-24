@@ -1,6 +1,6 @@
 var app = angular.module("app",['mainModule',
 	'ui.router','githubService','toaster',
-	'ngAnimate']);
+	'ngAnimate','directives']);
 
 
 

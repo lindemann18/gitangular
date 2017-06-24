@@ -1,7 +1,7 @@
 'use strict';
 var githubservice = angular.module("githubService",[]);
 
-githubservice.service('gitService',function($http){
+githubservice.service('gitService',function($http,toaster){
 	var self = {
 		"isLoading":false,
 		"URL":"https://api.github.com/",
@@ -15,7 +15,7 @@ githubservice.service('gitService',function($http){
 				},
 				function(err)
 				{
-
+					toaster.pop("error","Something Failed, we're working on it");
 				}
 			);
 		}
