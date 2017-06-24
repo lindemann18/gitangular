@@ -1,2 +1,11 @@
-#spinner{position:relative;width:50px;height:50px;margin:0 auto;padding:40px 0}#spinner p{margin-top:32%}
+#spinner { position: relative; width: 50px; height: 50px; margin: 0 auto; padding: 40px 0; }
+#spinner p { position: absolute; top: 71px; }
+
+.User { position: relative; margin-bottom: 2%; cursor: pointer; text-align: center; color: #3dc0f1; font-family: "Palanquin"; }
+.User .User__avatar img { width: 100%; }
+.User .User__login { font-size: 35px; }
+.User .User__url { font-size: 17px; }
+.User .User__info { position: absolute; top: 0; width: 90%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; }
+.User .User__info:hover { opacity: 1; transition: all 1s; -webkit-transition: all 1s; width: 90%; height: 100%; top: 0; display: inline !important; position: absolute; }
+
 /*# sourceMappingURL=main.css.map */

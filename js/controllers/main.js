@@ -4,5 +4,5 @@ appMain.controller("main",function($scope,gitService,toaster){
 	
 	$scope.gitService = gitService;
 	$scope.gitService.searchUsers();
-
+	
 });

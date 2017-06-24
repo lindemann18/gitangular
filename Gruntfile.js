@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     sass: {                              // Task
       dist: {                            // Target
         options: {                       // Target options
-          style: 'compressed'
+          style: 'compact'
         },
         files: [{
             expand: true,
