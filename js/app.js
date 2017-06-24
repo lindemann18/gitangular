@@ -1,4 +1,6 @@
-var app = angular.module("app",['mainModule','ui.router','photoservices']);
+var app = angular.module("app",['mainModule',
+	'ui.router','githubService','toaster',
+	'ngAnimate']);
 
 
 
