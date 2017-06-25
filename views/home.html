@@ -5,16 +5,7 @@
         	<div class="row">
         		<div class="Users">
         			<h2 class="text-center">Users List</h2>
-        			<div class="col-md-3 User" ng-repeat="user in gitService.users">
-        				<div class="User__avatar" >
-        					<img src="{{user.avatar_url}}" alt="">
-        				</div>
-
-        				<div class="User__info">
-        					<h3 class="User__login">{{user.login}}</h3>
-        					<span class="User__url">Url: {{user.html_url}}</span>
-        				</div>
-        			</div>
+        			<user-tile ng-repeat="user in gitService.users" avatar-url="user.avatar_url" login="user.login" html-url="user.html_url"></user-tile>
         		</div>
         	</div>
         </div>
