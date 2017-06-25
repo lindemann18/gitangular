@@ -19,7 +19,6 @@ appMain.controller("userDetails",function($scope,$stateParams,gitService,toaster
 				function(response)
 				{
 					$scope.gitService.followers = response.data;
-					console.log($scope.gitService.followers);
 				},
 				function(err)
 				{

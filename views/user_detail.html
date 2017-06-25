@@ -3,15 +3,19 @@
 	<cc-spinner is-loading="gitService.isLoading" message="Loading"></cc-spinner>
 		<div class="userInfo" ng-show="gitService.isLoading==false">
 			<div class="userInfo__head">
-				<img src="{{gitService.userInfo.avatar_url}}" alt="">
+				<h2 class="text-center">User Details</h2>
+				<img src="{{gitService.userInfo.avatar_url}}" alt="" class="img-circle">
 			</div>
 			<div class="userInfo__body">
 				<h3>{{gitService.userInfo.name}}</h3>
-				<span>Url: {{gitService.userInfo.url}}</span>
-				<span>Followers: {{gitService.userInfo.followers}}</span>
-				<span>User: {{gitService.userInfo.login}}</span>
+				<span><strong>Url:</strong> {{gitService.userInfo.url}}</span>
+				<span><strong>Followers:</strong> {{gitService.userInfo.followers}}</span>
+				<span><strong>User:</strong> {{gitService.userInfo.login}}</span>
+				<span><strong>Repos:</strong> {{gitService.userInfo.public_repos}}</span>
+				<span ng-show="gitService.userInfo.location!=null"><strong>Location:</strong> {{gitService.userInfo.location}}</span>
 			</div>
 			<div class="userInfo__followers col-md-8 col-md-offset-2">
+				<h2>Followers </h2>
 				<user-tile ng-repeat="user in gitService.followers" avatar-url="user.avatar_url" login="user.login" html-url="user.html_url"></user-tile>
 			</div>
 		</div><!-- userInfo-->

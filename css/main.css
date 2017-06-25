@@ -8,4 +8,10 @@
 .User .User__info { position: absolute; top: 0; width: 90%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; }
 .User .User__info:hover { opacity: 1; transition: all 1s; -webkit-transition: all 1s; width: 90%; height: 100%; top: 0; display: inline !important; position: absolute; }
 
+.userInfo { text-align: center; color: #3dc0f1; font-family: "Palanquin"; }
+.userInfo .userInfo__body { font-family: "Josefin Sans", sans-serif; }
+.userInfo .userInfo__body span { display: block; font-size: 21px; }
+.userInfo .userInfo__head img { width: 20%; }
+.userInfo .userInfo__followers { margin-top: 3%; margin-bottom: 3%; border: 2px solid #ccc; border-radius: 8px; }
+
 /*# sourceMappingURL=main.css.map */
