@@ -26,10 +26,11 @@
 	.User__info{
 		position:absolute;
 		top:0;
-		width:90%;
+		width:86%;
 		height:100%;
 		background-color: rgba(0, 0, 0, 0.5);
 		opacity: 0;
+		left: 15px;
 		&:hover{
 			opacity: 1;
 		    transition: all 1s;

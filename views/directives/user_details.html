@@ -1,0 +1,17 @@
+<div class="userInfo">
+	<div class="userInfo__head">
+		<h2 class="text-center">User Details</h2>
+		<img ng-src="{{avatarUrl}}" alt="" class="img-circle">
+	</div>
+	<div class="userInfo__body">
+		<h3>{{name}}</h3>
+		<span><strong>Url:</strong> {{htmlUrl}}</span>
+		<span><strong>Followers:</strong> {{followers}}</span>
+		<span><strong>User:</strong> {{login}}</span>
+		<span><strong>Repos:</strong> {{publicRepos}}</span>
+		<span ng-show="location!=null"><strong>Location:</strong> {{location}}</span>
+		<div>
+			<a class="btn btn-primary" href="#/">Go Back!</a>
+		</div>
+	</div>
+</div><!-- userInfo-->

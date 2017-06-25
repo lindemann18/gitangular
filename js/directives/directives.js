@@ -31,3 +31,24 @@ directives.directive("userTile",function(){
 		}
 	}
 });
+
+directives.directive("userDetails",function(){
+	return{
+		'transclude':true,
+		'restrict':'AE',
+		'templateUrl':"views/directives/user_details.html",
+		'scope':{
+			'avatarUrl':'=',
+			'login':'=',
+			'htmlUrl':'=',
+			"followers":'=',
+			"publicRepos":'=',
+			"location":'=',
+			"name":'='
+		},
+		'controller':function($scope,$state,gitService)
+		{
+			console.log($scope);
+		}
+	}
+});
