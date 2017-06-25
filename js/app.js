@@ -12,5 +12,10 @@ app.config(function($stateProvider,$urlRouterProvider){
 		controller:'main'
 	})
 
+	.state('user',{
+		url:'/user/:login/',
+		templateUrl:'views/user_detail.html',
+		controller:'userDetails'
+	})
 	$urlRouterProvider.otherwise('/');
 });

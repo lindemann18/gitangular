@@ -23,10 +23,10 @@ directives.directive("userTile",function(){
 			'login':'=',
 			'htmlUrl':'='
 		},
-		'controller':function($scope)
+		'controller':function($scope,$state,gitService)
 		{
 			$scope.ShowInfo = function(){
-				alert($scope.login);
+				$state.go('user',{login:$scope.login});
 			}
 		}
 	}
