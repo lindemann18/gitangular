@@ -8,11 +8,14 @@
 			</div>
 			<div class="userInfo__body">
 				<h3>{{gitService.userInfo.name}}</h3>
-				<span><strong>Url:</strong> {{gitService.userInfo.url}}</span>
+				<span><strong>Url:</strong> {{gitService.userInfo.html_url}}</span>
 				<span><strong>Followers:</strong> {{gitService.userInfo.followers}}</span>
 				<span><strong>User:</strong> {{gitService.userInfo.login}}</span>
 				<span><strong>Repos:</strong> {{gitService.userInfo.public_repos}}</span>
 				<span ng-show="gitService.userInfo.location!=null"><strong>Location:</strong> {{gitService.userInfo.location}}</span>
+				<div>
+					<a class="btn btn-primary" href="#/">Go Back!</a>
+				</div>
 			</div>
 			<div class="userInfo__followers col-md-8 col-md-offset-2">
 				<h2>Followers </h2>

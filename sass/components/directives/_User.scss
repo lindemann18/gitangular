@@ -13,11 +13,14 @@
 	
 	.User__login{
 		font-size: 35px;
+		word-wrap:break-word;
 	}
 
 	.User__url{
 		font-size: 17px;
 		word-wrap: break-word;
+		display:block;
+		clear:both
 	}
 
 	.User__info{

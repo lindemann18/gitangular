@@ -15,6 +15,7 @@ appMain.controller("userDetails",function($scope,$stateParams,gitService,toaster
 		function(response)
 		{
 			$scope.gitService.userInfo = response.data;
+			console.log($scope.gitService.userInfo);
 			$scope.gitService.searchFollowersByUser($scope.login).then(
 				function(response)
 				{

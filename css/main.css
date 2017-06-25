@@ -3,8 +3,8 @@
 
 .User { position: relative; margin-bottom: 2%; cursor: pointer; text-align: center; color: #3dc0f1; font-family: "Palanquin"; }
 .User .User__avatar img { width: 100%; }
-.User .User__login { font-size: 35px; }
-.User .User__url { font-size: 17px; word-wrap: break-word; }
+.User .User__login { font-size: 35px; word-wrap: break-word; }
+.User .User__url { font-size: 17px; word-wrap: break-word; display: block; clear: both; }
 .User .User__info { position: absolute; top: 0; width: 90%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; }
 .User .User__info:hover { opacity: 1; transition: all 1s; -webkit-transition: all 1s; width: 90%; height: 100%; top: 0; display: inline !important; position: absolute; }
 
