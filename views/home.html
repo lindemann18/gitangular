@@ -4,7 +4,7 @@
         <div class="col-md-12" ng-show="gitService.isLoading==false">
         	<div class="row">
         		<div class="Users">
-        			<h2 class="text-center">Users List</h2>
+        			<h2 class="text-center">Github Users List</h2>
         			<user-tile ng-repeat="user in gitService.users" avatar-url="user.avatar_url" login="user.login" html-url="user.html_url"></user-tile>
         		</div>
         	</div>
